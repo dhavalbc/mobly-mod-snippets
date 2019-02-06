@@ -1,13 +1,3 @@
-Mobly Bundled Snippets is a set of Snippets to allow Mobly tests to control
-Android devices by exposing a simplified version of the public Android API
-suitable for testing.
-
-We are adding more APIs as we go. If you have specific needs for certain groups
-of APIs, feel free to file a request in [Issues](https://github.com/google/mobly-bundled-snippets/issues).
-
-Note: this is not an official Google product.
-
-
 ## Usage
 
 1.  Compile and install the bundled snippets
@@ -39,31 +29,6 @@ Note: this is not an official Google product.
     ```
 
 ## Develop
-
-If you want to contribute, use the usual github method of forking and sending
-a pull request.
-
-Before sending a pull request, run the `presubmit` target to format and run
-lint over the code. Fix any issues it indicates. When complete, send the pull
-request.
-
-```shell
-./gradlew presubmit
-```
-
-This target will reformat the code with
-[googleJavaFormat](https://github.com/sherter/google-java-format-gradle-plugin)
-and run lint. The lint report should open in your default browser.
-
-Be sure to address *all* off the errors reported by lint. When finished and you
-run `presubmit` one last time you should see:
-
-> No Issues Found
->   Congratulations!
-
-in your browser.
-
-## Other resources
 
   * [Mobly multi-device test framework](http://github.com/google/mobly)
   * [Mobly Snippet Lib](http://github.com/google/mobly-snippet-lib)
