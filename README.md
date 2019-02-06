@@ -1,6 +1,8 @@
 Modified mobly snippets from following github link.
-
 https://github.com/google/mobly-bundled-snippets
+
+Modified MediaSnippet to control Android 3rd party music players using mobly
+(including google play music).
 
 ## Usage
 
