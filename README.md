@@ -1,3 +1,7 @@
+Modified mobly snippets from following github link.
+
+https://github.com/google/mobly-bundled-snippets
+
 ## Usage
 
 1.  Compile and install the bundled snippets
@@ -10,24 +14,13 @@
         snippet_shell.py com.google.android.mobly.snippet.bundled
         >>> print(s.help())
         Known methods:
-          bluetoothDisable() returns void  // Disable bluetooth with a 30s timeout.
         ...
-          wifiDisable() returns void  // Turns off Wi-Fi with a 30s timeout.
-          wifiEnable() returns void  // Turns on Wi-Fi with a 30s timeout.
+         mediaPause() returns void  // pause Media on default Android music player.
+         mediaPlay() returns void   // play Media on default Android music player.
+         mediaNext() returns void   // play next song.
+         mediaPrev() returns void   // play previous song.
         ...
-
-1.  To use these snippets within Mobly tests, load it on your AndroidDevice objects
-    after registering android_device module:
-
-    ```python
-    def setup_class(self):
-      self.ad = self.register_controllers(android_device, min_number=1)[0]
-      self.ad.load_snippet('api', 'com.google.android.mobly.snippet.bundled')
-
-    def test_enable_wifi(self):
-      self.ad.api.wifiEnable()
-    ```
-
+        
 ## Develop
 
   * [Mobly multi-device test framework](http://github.com/google/mobly)
